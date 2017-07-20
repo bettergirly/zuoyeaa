@@ -1,0 +1,963 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    color: black;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    
+}
+.clear:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.top {
+  
+       width: 100%;
+   
+}
+
+.header {
+    width: 100%;
+    height: 36px;
+    background: black;
+    line-height: 36px;
+    .header-center {
+        width: 1200px;
+        margin: 0 auto;
+        .header-left {
+            float: left;
+            a {
+                float: left;
+                color:#ccc;
+                &:not(:first-child) {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    color: white;
+                }
+                
+            }
+        }
+        .header-right {
+            float: right;
+            a {
+                float: left;
+                color: #ccc;
+                
+                padding-right: 10px;
+                
+            }
+        }
+    }
+        
+}
+.cont {
+    width: 100%;
+    .cont-kuai1 {
+        width: 1200px;
+        margin: 0 auto;
+        .banner-top {
+            margin-top: 15px;
+            height: 60px;
+            &>img {
+                float: left;
+                
+                &:not(:first-child) {
+                    margin-left: 50px;
+                }
+            }
+            .banner-top-dh {
+                height: 60px;
+                line-height: 60px;
+                margin-left: 60px;
+                float: left;
+                position: relative;
+                &>li {
+                    float:left;
+                    &:not(:first-child) {
+                        margin-left: 18px;
+                    }
+                    &:hover {
+                        &>a {
+                            color: red;
+                        }
+                        &>ul {
+                            display: block;
+                        }
+                    }
+                    ul {
+                        display: none;
+                        width: 1200px;
+                        height: 230px; 
+                        position: absolute;
+                        left: -202px;
+                        top: 60px;
+                        z-index: 999;
+                        background: white;
+                        li {
+                            text-align: center;
+                            width: 200px;
+                            height: 100%;
+                            float: left;
+                            line-height: 30px;
+                            img {
+                                width: 70%;
+                                margin-top: 40px;
+                            }
+                            p:last-child {
+                                color: orange;
+                            }
+                        }
+                    }
+                }    
+            }
+            .banner-top-ss {
+                float: right;
+                margin-top: 10px;
+                input {
+                    float: left;
+                    width: 200px;
+                    height: 40px;
+                    text-align: center;
+                    outline: none;
+                }
+                .banner-top-ss-img {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #ccc;
+                    border-left: 0;
+                    float: left;
+                    background: url(../img/sousuo.png) center center  no-repeat ;
+                    
+                }
+            }
+        }
+        .banner-banner {
+            margin-top: 20px;
+            height: 440px;
+            position: relative;
+            .banner-left {
+                width: 220px;
+                height: 440px;
+                background: rgba(0,0,0,0.5);
+                position: absolute;
+                z-index: 9;
+                &>li {
+                    width: 100%;
+                    height: 44px;
+                    padding: 0 10px;
+                    line-height: 44px;
+                    &:hover {
+                        background: orange;
+                        &>div {
+                            display: block;
+                        }
+                    }
+                    &>a {                  
+                        &>span:first-child {
+                            float: left;
+                            color: white;
+                        }
+                        &>span:last-child {
+                            float: right;
+                            color: white;
+                        }
+                    }
+                    div {
+                        width: 980px;
+                        height: 440px;
+                        position: absolute;
+                        left: 220px;
+                        top: 0;
+                        border-top: 1px solid #eee;
+                        display: none;
+                        ul {
+                            background: #fff;
+                            width: 245px;
+                            height: 440px;
+                            float: left;
+                            li {
+                                height: 73px;
+                                line-height: 43px;
+                                input {
+                                    width: 60px;
+                                    height: 22px;
+                                    background: #fff;
+                                    border: 1px solid orange;
+                                    text-align: center;
+                                    line-height: 22px;
+                                    float: right;
+                                    margin-right: 10px;
+                                    margin-top: 30px;
+                                }
+                                span {
+                                    margin-left: 10px;                                  
+                                }
+                            }
+                            img {
+                                width: 40px;
+                                margin-top: 25px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }     
+            }
+            .banner-right {
+                width: 1200px;
+                height: 440px;
+                .swiper-container {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    .swiper-button-prev {
+                        left: 230px;
+                    }
+                    
+                    img {
+                        height: 100%;
+                       width: 100%;
+                    }
+                }
+                    
+            }
+        }
+        .banner-bott {
+            width: 100%;
+            height: 160px;
+            margin-top: 20px;
+            .banner-bott-one {
+                width: 220px;
+                height: 160px;
+                background: #5F5750;
+                float: left;
+                a {
+                    display: block;
+                    width: 70px;
+                    height: 80px;
+                    text-align: center;
+                    float: left;
+                    img {
+                        margin-top: 17px;
+                    }
+                    p {
+                        color:#D1D2D1;
+                    }
+                }
+            }
+            &>img {
+                width: 305px;
+                height: 160px;
+                float: left;
+                margin-left: 21px;
+            }     
+        }
+        .xmmxdp {
+            margin-top: 20px;
+            .xmmxdp-tit {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .xmmxdp-cont {
+                width: 100%;
+                height: 320px;
+                a {
+                    width: 225px;
+                    height: 320px;
+                    float: left;
+                    text-align: center;
+                    background: #FAFAFA;
+                    &:not(:first-child) {
+                        margin-left: 18px;
+                    }
+                    img {
+                        margin-top: 40px;
+                    }
+                    p:nth-of-type(1){
+                        font-size: 14px;
+                        margin-top: 20px;
+                    }
+                    p:nth-of-type(2){
+                        color: #aaa;
+                        margin-top: 5px;
+                        
+                    }
+                    p:nth-of-type(3){
+                        color: orange;
+                        margin-top: 10px;
+                        
+                    }
+                    &:nth-of-type(1) {
+                        border-top: 2px solid orange;
+                    }
+                    &:nth-of-type(2) {
+                        border-top: 2px solid green;
+                    }
+                    &:nth-of-type(3) {
+                        border-top: 2px solid blue;
+                    }
+                    &:nth-of-type(4) {
+                        border-top: 2px solid darkred;
+                    }
+                    &:nth-of-type(5) {
+                        border-top: 2px solid cadetblue;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .cont-kuai2 {
+        width: 100%;
+        background: #F5F5F5;
+        margin-top: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        .cont-kuai2-center {
+            width: 1200px;
+            margin: 0 auto;
+            .cont-kuai2-jiadian {
+                .jiadian-tit {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    span {
+                        float: left;
+                        font-size: 20px;
+                        font-weight: bold;
+                        
+                    }
+                    div {
+                        float: right;
+                        a {
+                            float: left;
+                            font-size: 16px;                            
+                            margin-left:25px ; 
+                            &:hover {
+                                color: red;
+                            }                          
+                        }
+                    }
+                }
+                .jiadian-cont {
+                    width: 100%;
+                    height: 590px;
+                    .jiadian-cont-left {
+                        width: 220px;
+                        float: left;
+                        height: 100%;
+                    }
+                    .jiadian-cont-right {
+                        width: 980px;
+                        float: left;
+                        &>div {
+                            position: relative;
+                            width: 220px;
+                            height: 290px;   
+                            float:left;
+                            margin-left: 25px;
+                            text-align: center;
+                            overflow: hidden;
+                            &:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
+                                margin-top: 10px;
+                            }
+                            transition: 0.5s all;
+                            &:not(:last-child) {
+                                background: white;
+                                &:hover {  
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                                    &>div:last-child {
+                                         transition: 1s all;
+                                        transform: translateY(-50px);
+                                    }
+                                }
+                            }
+                            p:nth-of-type(1){
+                                font-size: 14px;
+                            }
+                            p:nth-of-type(2) {
+                                color: #aaa;
+                            }
+                            p:last-child {
+                                margin-top: 5px;
+                                color: orange;
+                            }
+                            &>div {
+                                width: 220px;
+                                height: 50px;
+                                position: absolute;
+                                left: 0;
+                                bottom: -50px;
+                                background: orange;
+                                p:last-child {
+                                    color: #aaa;
+                                }
+                            }
+                            
+                            
+                        }
+                        .jiadian-cont-right-last {
+                            width: 220px;
+                            height: 290px;
+                            margin-top: 10px;
+                            float: left;
+                            margin-left: 25px;
+                            a {
+                                width: 220px;
+                                height: 140px;
+                                display: block;
+                                background: white;
+                                margin: 0;
+                                &>div {
+                                    width: 180px;
+                                    height: 80px;
+                                    margin: 0 auto;
+                                    padding-top: 35px;
+                                    div {
+                                        float: left;
+                                        p {
+                                            margin-top: 10px;
+                                        }
+                                        
+                                    }
+                                    img {
+                                       float: right; 
+                                    }
+                                }
+                                transition: 0.5s all;
+                                &:hover {                              
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                                }
+                                
+                                &:last-child {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont-kuai2-zhineng {
+                margin-top: 10px;
+                .zhineng-tit {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    span {
+                        float: left;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    div {
+                        float: right;
+                        a {
+                            float: left;
+                            font-size: 16px;                            
+                            margin-left:25px ;                           
+                        }
+                    }
+                }
+                .zhineng-cont {
+                    width: 100%;
+                    height: 590px;
+                    .zhineng-cont-left {
+                        
+                        float: left;
+                        width: 220px;
+                        img {
+                            width: 100%;
+                            height: 288px; 
+                            &:last-child {
+                                margin-top: 8px;
+                            }
+                        }
+                    }
+                    .zhineng-cont-right {
+                        width: 980px;
+                        float: left;
+                        &>div {
+                            
+                            width: 220px;
+                            height: 290px;
+                            
+                            float:left;
+                            margin-left: 25px;
+                            text-align: center;
+                            &:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(7) {
+                                margin-top: 10px;
+                            }
+                            &:not(:last-child) {
+                                background: white;
+                                transition: 0.5s all;
+                                &:hover {                              
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                                }
+                            }
+                            p:nth-of-type(1){
+                                font-size: 14px;
+                                margin-top: 20px;
+                            }
+                            p:nth-of-type(2) {
+                                color: orange;
+                                margin-top: 5px;
+                            }
+                            p:last-child {
+                                margin-top: 10px;
+                                color: #aaa;
+                            }
+                            img {
+                                width: 150px;
+                                height: 150px;
+                                margin: 0 auto 18px;
+                            }
+                        }
+                        .zhineng-cont-right-last {
+                            width: 220px;
+                            height: 290px;
+                            margin-top: 10px;
+                            float: left;
+                            margin-left: 25px;
+                            a {
+                                width: 220px;
+                                height: 140px;
+                                display: block;
+                                background: white;
+                                margin: 0;
+                                &>div {
+                                    width: 180px;
+                                    height: 80px;
+                                    margin: 0 auto;
+                                    padding-top: 35px;
+                                    div {
+                                        float: left;
+                                        p {
+                                            margin-top: 10px;
+                                        }
+                                        
+                                    }
+                                    img {
+                                       float: right; 
+                                       width: 50px;
+                                       height: 50px;
+                                    }
+                                }
+                                
+                                &:last-child {
+                                    margin-top: 10px;
+                                }
+                                //移入上浮  有阴影
+                                transition: 0.5s all;
+                                &:hover {                              
+                                    transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont-kuai2-tuijian {
+                width: 100%;
+                margin-top: 10px;
+                
+                div {
+                    width: 100%;
+                    height: 300px;
+                    a {
+                        width: 220px;
+                        height: 290px;
+                        text-align: center;
+                        float: left;
+                        background: white;
+                        &:not(:nth-of-type(1)){
+                            margin-left: 25px;
+                        }
+                        img {
+                            margin-top: 20px;
+                        }
+                        p:nth-of-type(1){
+                            font-size: 14px;
+                            margin-top: 20px;
+                        }
+                        p:nth-of-type(2) {
+                            color: orange;
+                            margin-top: 5px;
+                        }
+                        p:nth-of-type(3) {
+                            margin-top: 10px;
+                            color:#aaa;
+                        }
+                        //移入上浮 有阴影
+                        transition: 0.5s all;
+                        &:hover {                              
+                            transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                        }
+                    }
+                }
+                    
+                &>p {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    span:first-child {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .cont-kuai2-reping {
+                width: 100%;
+                margin-top: 10px;
+                &>p {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    
+                    height: 30px;
+                    width: 100%;
+                    line-height: 30px;
+                }
+                div {
+                    width: 100%;
+                    height: 400px;
+                    a {
+                        float: left;
+                        width: 280px;
+                        height: 400px;
+                        background: white;
+                        text-align: center;
+                        &:not(:nth-of-type(1)){
+                            margin-left: 26px;
+                        }
+                        img {
+                            
+                        }
+                        p{
+                            
+                        }
+                        p:nth-of-type(1){
+                            font-size: 14px;
+                            margin-top: 20px;
+                        }
+                        p:nth-of-type(2) {
+                            color: #aaa;
+                            margin-top: 20px;
+                        }
+                        p:nth-of-type(3) {
+                            margin-top: 10px;
+                           span:last-child {
+                               color: orange;
+                           }
+                        }
+                        //移入上浮 有阴影
+                        transition: 0.5s all;
+                        &:hover {                              
+                            transform: translateY(-5px);
+                                    box-shadow: 0 10px 10px #CCC;
+                        }
+                    }
+                }
+                    
+            }
+            .cont-kuai2-neirong {
+                &>p {
+                   width: 100%;
+                   height: 50px;
+                   line-height: 50px;
+                   span {
+                       font-size: 20px;
+                       font-weight: bold;
+                   } 
+                }
+                &>div {
+                    width: 100%;
+                    height: 335px;
+                    
+                    &>div {
+                        width: 280px;
+                        height: 335px;
+                        float: left;
+                        border-top: 2px solid orange;
+                        background: #fff;
+                        overflow: hidden;
+                        position: relative;
+                        &>p{
+                            margin-top: 20px;
+                            font-size: 14px;
+                            color: orange;
+                            text-align:center; 
+                            font-size: 16px;
+                   
+                        }
+                        
+                        ul {
+                            width: 840px;
+                            position: absolute;
+                            left: 0;
+                            top: 40px;
+                            li {
+                                text-align: center;
+                                float: left;
+                                width: 280px;
+                                height: 335px;  
+                                
+                                p:nth-of-type(1) {
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    margin-top: 15px;
+                                }
+                                p:nth-of-type(2) {
+                                    color: #aaa;
+                                }
+                                p:nth-of-type(3) {
+                                    margin-top: 10px;
+                                }
+                                &>div {
+                                    width: 75px;
+                                    height: 10px;
+                                    margin: 0 auto;
+                                    margin-top: 10px;
+                                    div {
+                                      width: 4px;
+                                      height: 4px;
+                                      border-radius: 50%;
+                                      float: left;
+                                      background: #aaa;
+                                    }
+                                    div:first-child {
+                                        width: 8px;
+                                        height: 8px;
+                                        border: 1px solid orange;
+                                        background: white;
+                                    }  
+                                    div:not(:first-child){
+                                        margin-top: 3px;
+                                        margin-left: 29px;
+                                    }
+                                  
+                                }
+                            }
+                            
+                        }
+                        &>a {
+                            position: absolute;
+                            top: 150px;
+                            z-index: 2;
+                            display: block;
+                            width: 20px;
+                            height: 40px;
+                            background: #eee;
+                            text-align: center;
+                            line-height: 40px;
+                            color: #fff;
+                            font-weight: bold;
+                            display: none;
+                           
+                        }
+                        .minleft { 
+                            left: 0;                               
+                        }
+                        .minright {                                
+                            right: 0;
+                        }
+                        //后三个border-yop不一样
+                        &:nth-of-type(2) {
+                            &>p {
+                                color: lawngreen;
+                            }
+                            border-top:2px solid lawngreen;                        
+                        }
+                        &:nth-of-type(3) {
+                            &>p {
+                                color: darkred;
+                            }
+                            border-top:2px solid darkred;
+                        }
+                        &:nth-of-type(4) {
+                            &>p {
+                                color: blue;
+                            }
+                            border-top:2px solid blue;
+                        }
+                        //移入上浮 有阴影
+                        transition: 0.5s all;
+                        &:hover {                              
+                            transform: translateY(-5px);
+                            box-shadow: 0 10px 10px #CCC;
+                            &>a {
+                                display:block;
+                            }
+                        }
+                        &:not(:first-child){
+                            margin-left: 26px;
+                        }
+                    }                    
+                }
+            }
+            .cont-kuai2-shipin {
+                margin-top: 10px;
+                &>p {
+                    width: 100%;
+                    height: 50px;
+                    line-height: 50px;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+                div {
+                    width: 100%;
+                    height: 275px;
+                    a {
+                        float: left;
+                        width: 280px;
+                        height: 275px;
+                        text-align: center;
+                        background: white;
+                        &:not(:first-child){
+                            margin-left: 26px;
+                        }
+                        img {
+                            
+                        }
+                        p:nth-of-type(1) {
+                            font-size: 14px;
+                            margin-top: 20px;
+                        }
+                        p:nth-of-type(2) {
+                            color: #aaa;
+                            margin-top: 10px;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+        
+}
+.footer {
+    background: #fafafa;
+    .footer-cont {
+        width: 1200px;
+        margin: 0 auto;
+        .footer-one {
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            a {
+                
+                float: left;
+                width: 230px;
+                text-align: center;
+                &:not(:first-child){
+                    border-left: 1px solid #eee;
+                }
+            }
+        }
+        .footer-two {
+            width: 100%;
+            height: 185px;
+            margin-top: 20px;
+            .footer-two-left{
+                width: 940px;
+                height: 160px;
+                float: left;
+                margin-top: 20px;
+                ul {
+                    float: left;
+                    margin-right: 100px;
+                    li {                    
+                        margin-top: 5px;
+                        &:nth-of-type(1){
+                            font-size: 14px;
+                        }
+                        &:nth-of-type(2) {
+                            margin-top: 25px;
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+               
+            } 
+            .footer-two-right{
+                float: left;
+                width: 260px;
+                height: 185px;
+                div {
+                    width: 115px;
+                    height: 110px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    text-align: center;
+                    p:nth-of-type(1){
+                        font-size: 26px;
+                        font-weight: bold;
+                        color: orange;
+                        
+                    }
+                    p:nth-of-type(2){
+                        margin-top: 5px;
+                    }
+                    p:nth-of-type(3){
+                        margin-top: 4px;
+                    }
+                    button {
+                        width: 100%;
+                        height: 20px;
+                        border: 1px solid orange;
+                        background: white;
+                        outline: none;
+                        margin-top: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .zuihou {
+        width: 100%;
+        height: 100px;
+        &>div {
+            width: 1200px;
+            margin: 0 auto;
+           img {
+                float: left;
+            }
+            .zuihou-two {
+                float: left;
+                margin-left: 15px;
+                p:not(:first-child){
+                    color: #aaa;
+                }
+            }
+            .zuihou-three {
+                
+            } 
+        }
+            
+    }   
+}
